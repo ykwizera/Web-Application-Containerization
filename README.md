@@ -44,7 +44,7 @@ During the development process, the following assumptions and decisions were mad
 
 ## Presentation Deck
 
-For a detailed presentation about the implementation, architecture, and features of the application, please refer to the [Presentation Deck](link-to-presentation-deck).
+For a detailed presentation about the implementation, architecture, and features of the application, please refer to the [Presentation Deck](https://docs.google.com/presentation/d/1En-eOwTi67iPfRZW4aq1fvd-lKozuHOBKbgIR8zCPgA/edit?usp=sharing).
 
 
 

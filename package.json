@@ -1,0 +1,15 @@
+{
+  "name": "web-application-containerization",
+  "version": "1.0.0",
+  "description": "This a web application build using HTML, CSS, and JavaScript. The application have the following basic features:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Web-Application-Containerization"
+  },
+  "author": "yvette",
+  "license": "ISC"
+}

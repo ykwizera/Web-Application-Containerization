@@ -1,20 +1,16 @@
-# Use official Node.js image as the base image
-FROM node:14-alpine
+# Use an official web server image as the base image
+FROM nginx:alpine
 
 # Set the working directory in the container
-WORKDIR /usr/src/app
+WORKDIR /usr/share/nginx/html
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
+# Copy the HTML, CSS, and JavaScript files into the container
+COPY index.html .
+COPY styles.css .
+COPY script.js .
 
-# Install dependencies
-RUN npm install
+# Expose port 80 to allow external access
+EXPOSE 80
 
-# Copy application code into the container
-COPY . .
-
-# Expose port 3000 to the outside world
-EXPOSE 3000
-
-# Command to run the application
-CMD ["npm", "start"]
+# Command to start the web server
+CMD ["nginx", "-g", "daemon off;"]
